@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Logo from './logo.svg';
 import './App.css';
+import Basic from './Basic';
 
+var request = require('jquery');
+
+/*
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+        <Basic game = 'default' />
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
@@ -21,6 +25,17 @@ class App extends Component {
           </a>
         </header>
       </div>
+    );
+  }
+}
+*/
+
+class App extends Component {
+  render () {
+    return (
+    <div className = "App">
+    <Basic game = 'default' />
+    </div>
     );
   }
 }
